@@ -11,7 +11,7 @@ namespace Owin
     {
         public static void UseNancy(this IAppBuilder app)
         {
-            UseNancy(app, new DefaultNancyBootstrapper());
+            app.Use(typeof(NancyHandler));
         }
 
         public static void UseNancy(this IAppBuilder app, INancyBootstrapper bootstrapper)
@@ -23,6 +23,12 @@ namespace Owin
         {
             private readonly Func<IDictionary<string, object>, Task> _next;
             private readonly NancyOwinHost _owinHost;
+
+            public NancyHandler(Func<IDictionary<string, object>, Task> next)
+            {
+                _next = next;
+                _owinHost = new NancyOwinHost();
+            }
 
             public NancyHandler(Func<IDictionary<string, object>, Task> next, INancyBootstrapper bootstrapper)
             {
