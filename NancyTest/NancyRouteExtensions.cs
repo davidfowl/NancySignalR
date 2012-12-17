@@ -9,7 +9,7 @@ namespace System.Web.Routing
     {
         public static void MapNancy(this RouteCollection routes)
         {
-            MapNancy(routes, new DefaultNancyBootstrapper());
+            routes.MapOwinRoute("nancy", String.Empty, app => app.UseNancy());
         }
 
         public static void MapNancy(this RouteCollection routes, INancyBootstrapper bootstrapper)
