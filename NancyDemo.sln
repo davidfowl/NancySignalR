@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{485052
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NancyTest", "NancyTest\NancyTest.csproj", "{AE98DD6C-AC25-4ACA-A287-B4799A9A292F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.Hosting.Owin.Shim", "Nancy.Hosting.Owin.Shim\Nancy.Hosting.Owin.Shim.csproj", "{D0DD628A-74F4-4E2D-A552-4B030F1C8228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustNugetTest", "JustNugetTest\JustNugetTest.csproj", "{23E7DA4E-B53D-4EFF-81C1-92AB5C9CFA3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{AE98DD6C-AC25-4ACA-A287-B4799A9A292F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE98DD6C-AC25-4ACA-A287-B4799A9A292F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE98DD6C-AC25-4ACA-A287-B4799A9A292F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0DD628A-74F4-4E2D-A552-4B030F1C8228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DD628A-74F4-4E2D-A552-4B030F1C8228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DD628A-74F4-4E2D-A552-4B030F1C8228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DD628A-74F4-4E2D-A552-4B030F1C8228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E7DA4E-B53D-4EFF-81C1-92AB5C9CFA3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E7DA4E-B53D-4EFF-81C1-92AB5C9CFA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E7DA4E-B53D-4EFF-81C1-92AB5C9CFA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E7DA4E-B53D-4EFF-81C1-92AB5C9CFA3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
