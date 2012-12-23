@@ -6,24 +6,28 @@ reference nancy.hosting.owin.shim
 add class MainModule : NancyModule
 
 -- proposed goal
-install-package nancy.autostartup.systemweb
+install-package nancy.hosting.aspnet
+add class MainModule : NancyModule
 
 -- proposed nancy.autostartup.systemweb dependency graph
--nancy.autostartup.systemweb [metapackage]
+-nancy.hosting.aspnet [metapackage]
   -nancy.hosting.owin
     -nancy
     -owin
   -owin.autostartup.systemweb
-    -owin.autostartup.sources
+    -owin.autostartup
+      -owin
     -microsoft.owin.host.systemweb
+      -microsoft.web.infrastructure
       -owin
 
--nancy.autostartup.httplistener [metapackage]
+-nancy.hosting.httplistener [metapackage]
   -nancy.hosting.owin
     -nancy
     -owin
   -owin.autostartup.httplistener
-    -owin.autostartup.sources
+    -owin.autostartup
+      -owin
     -microsoft.owin.host.httplistener
     -microsoft.owin.hosting
       -owin
