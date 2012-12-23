@@ -1,5 +1,4 @@
 ﻿using Microsoft.Owin.Host.SystemWeb;
-using Nancy;
 using Nancy.Bootstrapper;
 using Owin;
 
